@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Anak Jaktim 💙</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="hearts"></div>
+
+<audio id="music" loop>
+<source src="shapeofmyheart.mp3" type="audio/mpeg">
+</audio>
+
+<!-- PIN SCREEN -->
+
+<div id="pinScreen">
+
+<div class="pin-box">
+
+<h1>💙</h1>
+
+<h2>Private Birthday Gift</h2>
+
+<p>Enter PIN</p>
+
+<input
+type="password"
+id="pinInput"
+readonly
+placeholder="••••">
+
+<div class="keypad">
+
+<button onclick="addPin('1')">1</button>
+<button onclick="addPin('2')">2</button>
+<button onclick="addPin('3')">3</button>
+
+<button onclick="addPin('4')">4</button>
+<button onclick="addPin('5')">5</button>
+<button onclick="addPin('6')">6</button>
+
+<button onclick="addPin('7')">7</button>
+<button onclick="addPin('8')">8</button>
+<button onclick="addPin('9')">9</button>
+
+<button onclick="clearPin()">⌫</button>
+<button onclick="addPin('0')">0</button>
+<button onclick="checkPin()">💙</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- WEBSITE -->
+
+<div id="website" class="hidden">
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Happy Birthday 🎂</h1>
+
+<h2>Anak Jaktim 💙</h2>
+
+<p>
+
+Today is all about celebrating
+someone truly special.
+
+So I made this little place
+filled with memories,
+laughter,
+and words straight
+from my heart.
+
+I hope this little surprise
+makes your birthday
+even more memorable.
+
+Have the happiest birthday.
+
+💙
+
+</p>
+
+<button onclick="openHeart()">
+Open My Heart 💙
+</button>
+
+</section>
+
+<!-- BOTTLE -->
+
+<section id="bottleSection" class="hidden">
+
+<h2>A Birthday Wish 💙</h2>
+
+<p class="tap-text">
+Tap the bottle
+</p>
+
+<div id="bottleArea">
+
+<div id="bottle" onclick="breakBottle()">
+🍾
+</div>
+
+<div id="flowers"></div>
+
+</div>
+
+<div id="letterContainer">
+
+<div class="letter-paper">
+
+<div id="letterText"></div>
+
+</div>
+
+</div>
+
+</section>
+
+  <!-- GALLERY -->
+
+<section class="gallery">
+
+<h2>You're Awesome 💙</h2>
+
+<div class="gallery-grid">
+
+<img src="foto1.jpg" alt="Photo 1">
+<img src="foto2.jpg" alt="Photo 2">
+
+<img src="foto3.jpg" alt="Photo 3">
+<img src="foto4.jpg" alt="Photo 4">
+
+<img src="foto5.jpg" alt="Photo 5">
+<img src="foto6.jpg" alt="Photo 6">
+
+<img src="foto7.jpg" alt="Photo 7">
+<img src="foto8.jpg" alt="Photo 8">
+
+<img src="foto9.jpg" alt="Photo 9">
+<img src="foto10.jpg" alt="Photo 10">
+
+</div>
+
+</section>
+
+<!-- LOVE QUIZ -->
+
+<section class="quiz-section">
+
+<h2>💙 Birthday Quiz 💙</h2>
+
+<p>
+
+Answer all questions correctly
+to unlock the final surprise.
+
+</p>
+
+<div id="quizBox">
+
+<!-- QUESTION 1 -->
+
+<div class="question active">
+
+<h3>Tempat kamu duduk sekarang?</h3>
+
+<button onclick="checkAnswer(this,true)">
+Jaktim 💙
+</button>
+
+<button onclick="checkAnswer(this,false)">
+Jakpus
+</button>
+
+<button onclick="checkAnswer(this,false)">
+Ancol
+</button>
+
+</div>
+
+<!-- QUESTION 2 -->
+
+<div class="question">
+
+<h3>Siapa yang sayang kamu?</h3>
+
+<button onclick="checkAnswer(this,false)">
+Gigolo
+</button>
+
+<button onclick="checkAnswer(this,true)">
+Oyin 💙
+</button>
+
+<button onclick="checkAnswer(this,false)">
+Pak Guru
+</button>
+
+</div>
+
+<!-- QUESTION 3 -->
+
+<div class="question">
+
+<h3>Siapa orang paling keren hari ini?</h3>
+
+<button onclick="checkAnswer(this,false)">
+Anak Jakpus
+</button>
+
+<button onclick="checkAnswer(this,true)">
+JORMEK GSLERDO 😎
+</button>
+
+<button onclick="checkAnswer(this,false)">
+Anak Jabar
+</button>
+
+</div>
+
+</div>
+
+<!-- SPECIAL PHOTO -->
+
+<div id="quizSuccess" class="hidden">
+
+<h2>🎉 Happy Birthday! 🎉</h2>
+
+<img src="special.jpg" class="special-photo">
+
+<p>
+
+May this year
+bring you happiness,
+good health,
+and endless blessings.
+
+Have the best birthday ever!
+
+💙
+
+</p>
+
+</div>
+
+  </section>
+
+  <!-- FINAL -->
+
+<section class="final">
+
+<h2>Happy Birthday 💙</h2>
+
+<h3>Anak Jaktim</h3>
+
+<p>
+
+Happy Birthday once again.
+
+I hope today becomes
+one of the happiest days
+you'll always remember.
+
+May every prayer you whisper
+find its way to reality.
+
+May every step you take
+lead you closer
+to everything you've dreamed of.
+
+Keep smiling.
+
+Keep being yourself.
+
+Keep making people around you
+feel comfortable with your presence.
+
+Thank you
+for being an amazing person.
+
+No matter what happens,
+never stop believing
+that better days
+are always waiting ahead.
+
+Enjoy your special day,
+laugh as much as you can,
+make beautiful memories,
+and never forget
+how valuable you are.
+
+Happy Birthday,
+Anak Jaktim.
+
+Wishing you
+nothing but happiness,
+good health,
+success,
+and endless blessings.
+
+See you
+in another beautiful chapter.
+
+💙
+
+— Anak Jakpus
+
+</p>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
